@@ -1,0 +1,207 @@
+// Файл обнуляющих стилей
+@import "nullstyleabd.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+@font-face {
+    font-family: "Teddy Bear";
+    src: url("../fonts/teddy_bear.eot"); /* IE 9 Compatibility Mode */
+    src: url("../fonts/teddy_bear.eot?#iefix") format("embedded-opentype"),
+        /* IE < 9 */ url("../fonts/teddy_bear.woff2") format("woff2"),
+        /* Super Modern Browsers */ url("../fonts/teddy_bear.woff") format("woff"),
+        /* Firefox >= 3.6, any other modern browser */ url("../fonts/teddy_bear.ttf") format("truetype"),
+        /* Safari, Android, iOS */ url("../fonts/teddy_bear.svg#teddy_bear") format("svg"); /* Chrome < 4, Legacy iOS */
+}
+
+$fz: 30px;
+// $mw: 400px;
+$cl: #fff;
+
+.wrapper {
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.newspaper {
+    &__main-title {
+        font-family: "Teddy Bear";
+        text-align: center;
+        color: red;
+        height: 100px;
+        font-size: $fz + 30;
+        margin-top: 20px;
+        width: 100%;
+        border-bottom: solid black;
+        padding-bottom: 40px;
+    }
+    &__under-title {
+        border-top: solid 10px;
+        background-color: #e7d9d9;
+        // color: red;
+        text-align: center;
+        font-size: $fz;
+        width: 100%;
+        margin-top: 5px;
+    }
+    &__box {
+        min-height: 100%;
+        display: flex;
+        width: 100%;
+    }
+    &__block1 {
+        min-height: 100%;
+        max-width: 70%;
+        margin-top: 20px;
+    }
+    &__article-1 {
+        border-bottom: solid;
+        min-height: 30%;
+        font-size: $fz;
+    }
+    .img2 {
+        margin-top: 60px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    &__article-2 {
+        min-height: 70%;
+        font-size: $fz;
+    }
+
+    &__article-2flex {
+        margin-top: 250px;
+        display: flex;
+    }
+    &__article-2right {
+        // margin-left: 60px;
+    }
+
+    .img {
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+
+    &__block2 {
+        border-left: solid;
+        min-height: 100%;
+        font-size: $fz;
+        width: 30%;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding-left: 20px;
+        // margin: 0 auto;
+    }
+    & p {
+        padding-top: 30px;
+        text-align: justify;
+        margin: 0 auto;
+    }
+    & h2 {
+        font-size: 40px;
+        font-family: "Teddy Bear";
+        text-align: center;
+    }
+    &__block3 {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        border-top: solid;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: $fz;
+        width: 100%;
+        min-height: 100%;
+    }
+    h3 {
+        
+        margin-top: 20px;
+        background-color: black;
+        color: rgb(250, 252, 245);
+        min-height: 60px;
+        vertical-align: middle;
+    }
+    &__anons1 {
+        min-height: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    &__anons2 {
+        margin-left: 5px;
+        margin-right: 5px;
+        min-height: 50px;
+    }
+    &__anons3 {
+        margin-left: 5px;
+        margin-right: 5px;
+        min-height: 50px;
+    }
+    &__anons4 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .newspaper__box {
+        // background-color: blue;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        // padding-left: 20%;
+    }
+    .newspaper__block1 {
+        padding-top: 15px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .img2 {
+        padding-bottom: 100px;
+    }
+    h2 {
+        color: red;
+    }
+    .newspaper__article-1 {
+        padding-bottom: 100px;
+    }
+    .newspaper__block2 {
+        width: 95%;
+        h2 {
+            margin-top: 10px;
+        }
+    }
+    .newspaper__block3 {
+        border: hidden;
+    }
+    .newspaper__article-2flex {
+        display: block;
+        // width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .newspaper__box {
+        // background-color:rgb(229, 18, 18);
+        // color: red;
+        display: block;
+        // display: flex;
+        max-width: 100%;
+        // flex-wrap: wrap;
+
+        .newspaper__block1 {
+        }
+        .newspaper__block2 {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .newspaper__block3 {
+        display: block;
+    }
+    .newspaper__article-2flex {
+        display: block;
+    }
+}
